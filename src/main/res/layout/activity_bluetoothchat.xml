@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetoothstatus_chat_id"
+        android:textColor="#2A3c58"
+        android:textStyle="bold"
+        android:text="Connection Mode"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:id="@+id/chatbtns_linear_layout_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_below="@id/bluetoothstatus_chat_id">
+
+        <Button
+            android:id="@+id/enablebtn_bluetooth"
+            android:layout_width="135sp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:text="Enable"
+            android:textStyle="bold"
+            android:textColor="#2A3c58"
+            android:background="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/visibleButton_bluetooth"
+            android:layout_width="135sp"
+            android:layout_height="wrap_content"
+            android:textColor="#2A3c58"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="visible"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/scanButton_bluetooth"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <Button
+            android:id="@+id/discoverbtn_bluetooth"
+            android:layout_width="135sp"
+            android:layout_height="50sp"
+            android:textSize="15sp"
+            android:text="Connect"
+            android:textStyle="bold"
+            android:textColor="#2A3c58"
+            android:background="#FFFFFF"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recyclerview_messages_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/chat_linear_layout_bluetooth"
+        android:layout_below="@id/chatbtns_linear_layout_bluetooth"
+        android:background="@drawable/mainbackground"
+        android:scrollbars="vertical"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/chat_linear_layout_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/Messagetxt_bluetooth_id"
+            android:layout_width="310sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Message"
+            android:textColorHint="#2A3c58"
+            android:textColor="#2A3c58"
+            android:background="@drawable/chat_edittext"
+            android:padding="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/sendmessagebtn_Bluetoothchat_id"
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sendmessage"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:padding="0dp" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

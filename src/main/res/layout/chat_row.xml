@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:layout_weight="0.47"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+	<RelativeLayout
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+		<RelativeLayout
+			android:id="@+id/relativeLayout_receiver"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/background_left"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop="10dp"
+			android:layout_toRightOf="@id/profileimage_receiver"
+			android:layout_marginBottom="2dp">
+
+			<TextView
+				android:id="@+id/receivermessagetxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="10dp"
+				android:text="Receiver Message"
+				android:textColor="#FFFFFF"
+				android:padding="14sp"
+				android:background="@drawable/background_left"
+				android:textStyle="bold"
+				/>
+
+			<com.example.simlesschat.Classes.DynamicImageView
+				android:id="@+id/receivermessageimage"
+				android:layout_width="200sp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="10dp"
+				android:text="Receiver Message"
+				android:textColor="#FFFFFF"
+				android:padding="14sp"
+				android:longClickable="true"
+				android:scaleType="centerCrop" />
+
+
+			<ImageView
+				android:id="@+id/playAudio_receiver"
+				android:layout_width="wrap_content"
+				android:layout_height="50sp"
+				android:contentDescription="@string/playback_button"
+				android:layout_below="@id/receivermessageimage"
+				android:src="@drawable/play_audio"
+				android:scaleType="fitXY"
+				android:background="@drawable/background_left"
+				android:longClickable="true" />
+
+			<RelativeLayout
+				android:id="@+id/videoMessage_receiver"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/playAudio_receiver">
+
+				<com.example.simlesschat.Classes.DynamicImageView
+					android:id="@+id/playVideo_receiver"
+					android:layout_width="180dp"
+					android:layout_height="wrap_content"
+					android:scaleType="fitCenter"
+					android:contentDescription="@string/playback_button"
+					android:longClickable="true"
+					android:background="@drawable/background_left"
+					android:layout_marginTop="10dp" />
+
+				<ImageView
+					android:id="@+id/buttonPlayVideo_receiver"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:src="@drawable/play_video_button"
+					android:contentDescription="@string/playback_button"
+					android:longClickable="true"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/videoMessage_receiver" >
+
+				<ImageView
+					android:id="@+id/file_attached_icon_receiver"
+					android:layout_width="wrap_content"
+					android:layout_height="80dp"
+					android:longClickable="true"
+					android:src="@drawable/file_attached"
+					android:background="@drawable/background_left"
+					android:contentDescription="@string/file_icon"/>
+
+				<TextView
+					android:id="@+id/fileSaved_receiver"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@id/file_attached_icon_receiver"
+					android:background="@drawable/background_left"
+					android:longClickable="true" />
+
+			</RelativeLayout>
+
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/relativeLayout_sender"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/background_right"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="2dp">
+
+			<TextView
+				android:id="@+id/sendermessagetxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="10dp"
+				android:text="Receiver Message"
+				android:layout_marginRight="0sp"
+				android:textColor="#FFFFFF"
+				android:padding="14sp"
+				android:background="@drawable/background_right"
+				android:textStyle="bold"
+				/>
+
+			<com.example.simlesschat.Classes.DynamicImageView
+				android:id="@+id/sendermessageimage"
+				android:layout_width="200sp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:text="Receiver Message"
+				android:textColor="#FFFFFF"
+				android:padding="14sp"
+				android:longClickable="true"
+				android:scaleType="centerCrop" />
+
+
+			<ImageView
+				android:id="@+id/playAudio_sender"
+				android:layout_width="wrap_content"
+				android:layout_height="50sp"
+				android:contentDescription="@string/playback_button"
+				android:layout_below="@id/sendermessageimage"
+				android:scaleType="fitXY"
+				android:background="@drawable/background_right"
+				android:src="@drawable/play_audio"
+				android:longClickable="true" />
+
+			<RelativeLayout
+				android:id="@+id/videoMessage_sender"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/background_right"
+				android:layout_below="@id/playAudio_sender">
+
+				<com.example.simlesschat.Classes.DynamicImageView
+					android:id="@+id/playVideo_sender"
+					android:layout_width="180dp"
+					android:layout_height="wrap_content"
+					android:scaleType="fitCenter"
+					android:contentDescription="@string/playback_button"
+					android:longClickable="true"
+					android:background="@drawable/background_right"
+					android:layout_marginTop="10dp" />
+
+				<ImageView
+					android:id="@+id/buttonPlayVideo_sender"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:src="@drawable/play_video_button"
+					android:contentDescription="@string/playback_button"
+					android:longClickable="true"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/background_right"
+				android:layout_below="@id/videoMessage_sender" >
+
+				<ImageView
+					android:id="@+id/file_attached_icon_sender"
+					android:layout_width="wrap_content"
+					android:layout_height="80dp"
+					android:longClickable="true"
+					android:src="@drawable/file_attached"
+					android:background="@drawable/background_right"
+					android:contentDescription="@string/file_icon"/>
+
+				<TextView
+					android:id="@+id/fileSaved_sender"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:longClickable="true"
+					android:layout_centerVertical="true"
+					android:background="@drawable/background_right"
+					android:layout_toRightOf="@id/file_attached_icon_sender" />
+
+			</RelativeLayout>
+
+
+		</RelativeLayout>
+
+
+		<TextView
+			android:id="@+id/profileimage_receiver"
+			android:background="@drawable/circle"
+			android:textAlignment="center"
+			android:textSize="35sp"
+			android:textColor="#2A3c58"
+			android:textStyle="bold"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp"
+			/>
+
+	</RelativeLayout>
+</ScrollView>

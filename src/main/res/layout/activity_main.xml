@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/getstartedbtn_id"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderCircularHandlerEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#192943"
+        app:sliderScrollTimeInSec="1"
+        app:sliderStartAutoCycle="true">
+
+
+        <ImageView
+            android:id="@+id/iv_auto_image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:scaleType="fitXY" />
+
+
+    </com.smarteist.autoimageslider.SliderView>
+
+    <Button
+        android:id="@+id/getstartedbtn_id"
+        android:text="Get started"
+        android:textColor="#ffffff"
+        android:fontFamily="monospace"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_width="500dp"
+        android:layout_height="85sp"
+        android:layout_below="@id/imageSlider"
+        android:layout_marginBottom="0dp"
+        android:background="#192943"
+        android:scaleType="fitXY"
+        android:shape="rectangle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

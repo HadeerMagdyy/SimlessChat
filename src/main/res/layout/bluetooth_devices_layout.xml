@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Paired Devices" />
+
+    <ListView
+        android:id="@+id/pairedDeviceList_bluetooth"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/listview_shape"
+        android:layout_height="200sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Discovered Devices" />
+
+    <ListView
+        android:id="@+id/discoveredDeviceList_bluetooth"
+        android:layout_width="match_parent"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/listview_shape"
+        android:layout_height="200sp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+
+        <Button
+            android:id="@+id/scanButton_bluetooth"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2sp"
+            android:textColor="#2A3c58"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/edit_button"
+            android:text="Scan"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+    <Button
+        android:id="@+id/cancelButton_bluetooth"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:textColor="#2A3c58"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="2sp"
+        android:background="@drawable/edit_button"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@id/scanButton_bluetooth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

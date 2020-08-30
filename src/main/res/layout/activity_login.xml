@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    android:scaleType="fitXY"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120sp"
+        android:layout_height="130sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/log"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/circle"
+        />
+
+    <com.sarnava.textwriter.TextWriter
+        android:id="@+id/textWriter"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circle"
+
+        />
+
+    <EditText
+        android:id="@+id/username_loginactivity_id"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/login_username_edittext"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="30sp"
+        app:layout_constraintTop_toBottomOf="@id/textWriter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/password_loginactivity_id"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/login_password_edittext"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_loginactivity_id" />
+
+    <Button
+        android:id="@+id/loginbtn_loginactivity_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_button"
+        android:layout_marginTop="25sp"
+        android:text="LOGIN"
+        android:textColor="#2A3c58"
+        android:textSize="20sp"
+        android:layout_marginRight="90sp"
+        android:layout_marginLeft="90sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_loginactivity_id" />
+
+    <TextView
+        android:id="@+id/registertxt_loginactivity_id"
+        android:layout_width="120sp"
+        android:layout_height="30sp"
+        android:text="Register Here."
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10sp"
+        android:drawableRight="@drawable/register_textview_icon"
+        app:layout_constraintTop_toBottomOf="@id/loginbtn_loginactivity_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

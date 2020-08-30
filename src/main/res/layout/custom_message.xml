@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_weight="0.47"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TextView
+            android:id="@+id/profileimage_receiver"
+            android:background="@drawable/circle"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textColor="#2A3c58"
+            android:textStyle="bold"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/receivermessagetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/profileimage_receiver"
+            android:layout_toRightOf="@id/profileimage_receiver"
+            android:text="Receiver Message"
+            android:textColor="#FFFFFF"
+            android:padding="14sp"
+            android:background="@drawable/background_left"
+            android:textStyle="bold"
+            />
+        <com.example.simlesschat.Classes.DynamicImageView
+            android:id="@+id/receivermessageimage"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/profileimage_receiver"
+            android:layout_toRightOf="@id/profileimage_receiver"
+            android:longClickable="true"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/playAudio_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:background="@drawable/background_left"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/profileimage_receiver"
+            android:layout_toRightOf="@id/profileimage_receiver"
+            android:contentDescription="@string/playback_button"
+            android:src="@drawable/play_audio"
+            android:longClickable="true" />
+
+        <com.example.simlesschat.Classes.DynamicImageView
+            android:id="@+id/playVideo_receiver"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/profileimage_receiver"
+            android:layout_toRightOf="@id/profileimage_receiver"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/playback_button"
+            android:longClickable="true"
+            android:background="@drawable/background_left"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/buttonPlayVideo_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/profileimage_receiver"
+            android:layout_toRightOf="@id/profileimage_receiver"
+            android:src="@drawable/play_video_button"
+            android:contentDescription="@string/playback_button"
+            android:longClickable="true"/>
+
+
+        <ImageView
+            android:id="@+id/file_attached_icon_receiver"
+            android:layout_width="wrap_content"
+            android:longClickable="true"
+            android:layout_height="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/profileimage_receiver"
+            android:layout_toRightOf="@id/profileimage_receiver"
+            android:src="@drawable/file_attached"
+            android:contentDescription="@string/file_icon"/>
+
+        <TextView
+            android:id="@+id/fileSaved_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:longClickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/background_left"
+            android:layout_toRightOf="@id/file_attached_icon_receiver" />
+
+
+        <TextView
+            android:id="@+id/sendermessagetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/background_right"
+            android:padding="14sp"
+            android:text="Sender Message"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+        <com.example.simlesschat.Classes.DynamicImageView
+            android:id="@+id/sendermessageimage"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:longClickable="true"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/playAudio_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/background_right"
+            android:src="@drawable/play_audio"
+            android:longClickable="true" />
+
+
+            <com.example.simlesschat.Classes.DynamicImageView
+                android:id="@+id/playVideo_sender"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/playback_button"
+                android:longClickable="true"
+                android:background="@drawable/background_right"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/buttonPlayVideo_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/play_video_button"
+                android:contentDescription="@string/playback_button"
+                android:longClickable="true"/>
+
+
+            <ImageView
+                android:id="@+id/file_attached_icon_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:longClickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/file_attached"
+                android:contentDescription="@string/file_icon"/>
+
+            <TextView
+                android:id="@+id/fileSaved_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:longClickable="true"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/background_right"
+                android:layout_toLeftOf="@id/file_attached_icon_sender" />
+
+
+    </RelativeLayout>
+</ScrollView>

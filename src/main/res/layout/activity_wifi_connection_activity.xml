@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Go to Settings screen -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/mainbackground"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/discovertxtview_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Availabe devices"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            app:layout_constraintBottom_toTopOf="@id/discoverlistview_wifi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#FFFFFF" />
+
+        <ListView
+            android:id="@+id/discoverlistview_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="450sp"
+            android:background="@drawable/listview_shape"
+            app:layout_constraintTop_toBottomOf="@id/discovertxtview_wifi"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/scanbutton_wifi"
+            />
+
+        <ImageButton
+            android:id="@+id/scanbutton_wifi"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:textColor="#2A3c58"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/searchbtn"
+            app:layout_constraintTop_toBottomOf="@id/discoverlistview_wifi"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- Go to Chat screen -->
+
+    <ImageView
+        android:id="@+id/disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setChatNameLabel"
+        android:contentDescription="@string/disconnect"
+        android:src="@drawable/disconnect"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@id/setChatNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setChatName"
+        android:text="@string/set_chat_name"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@id/setChatName"
+        android:inputType="textCapWords"
+        android:lines="1"
+        android:maxLength="20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:background="@drawable/edit_text"
+        android:drawablePadding="10dp"
+        android:hint="Chat name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:drawableLeft="@drawable/chatnameicon"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/goToChat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit_button"
+        android:layout_margin="20dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

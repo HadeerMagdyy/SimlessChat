@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.WifiChatActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recyclerview_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/chat_linear_layout"
+        app:stackFromEnd="true"
+        app:reverseLayout="true"
+        android:background="@drawable/mainbackground"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/chat_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/Messagetxt_id"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Message"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textColorHint="#2A3c58"
+            android:textColor="#2A3c58"
+            android:background="@drawable/chat_edittext"
+            android:padding="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/sendmessagebtn_wifichat_id"
+            android:layout_width="45sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sendmessage"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:padding="0dp" />
+
+        <ImageButton
+            android:id="@+id/recordmessagebtn_wifichat_id"
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/microphone"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="#FFFFFF"
+            android:padding="0dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

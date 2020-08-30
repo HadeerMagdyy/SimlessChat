@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/mainbackground"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/chatname_allchatsactivity_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="25sp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="name Here !"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/chattime_allchatsactivity_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="35sp"
+                    android:layout_below="@id/chatname_allchatsactivity_txt"
+                    android:text="Time Here "
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    app:layout_constraintLeft_toLeftOf="@id/chatname_allchatsactivity_txt"
+                    app:layout_constraintTop_toBottomOf="@id/chatname_allchatsactivity_txt"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/chatimage_allchatsactivity_id"
+                android:layout_width="60sp"
+                android:layout_height="80sp"
+                android:background="@drawable/circle"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="#2A3c58"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                 />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

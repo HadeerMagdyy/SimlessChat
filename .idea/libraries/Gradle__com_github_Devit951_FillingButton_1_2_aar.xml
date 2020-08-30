@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Devit951:FillingButton:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18f29060a0196cfe124e5bdf21fcf2ff/jetified-FillingButton-1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/18f29060a0196cfe124e5bdf21fcf2ff/jetified-FillingButton-1.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Devit951/FillingButton/1.2/7a2b41d0a487bea675acac8bd276769a47d2c48a/FillingButton-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
